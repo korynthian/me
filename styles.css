@@ -1,52 +1,82 @@
 body {
     background-color: #000; /* Black background */
-    color: #7FFF7F; /* Softer green color */
-    font-family: Arial, sans-serif;
+    color: #7FFF7F; /* Softer green */
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background: #111;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Aligns text to the top */
-    height: auto; /* Auto height for content */
+    gap: 20px;
     margin: 0;
-    text-align: center;
-    padding: 20px; /* Added padding */
-    overflow: auto; /* Allows for scrolling */
-    max-height: 100vh; /* Restrict the height to the viewport */
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #7FFF7F;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #4CAF50;
 }
 
 .container {
-    max-width: 800px; /* Increased width */
-    padding: 40px; /* Padding for spacing */
-    overflow-y: auto; /* Allows vertical scrolling */
-    max-height: 80vh; /* Limit the height to leave space for scrolling */
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-
 .typing {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
-    overflow: hidden; /* Prevent overflow */
-    display: inline-block; /* Inline display for text wrapping */
-    margin: 10px 0; /* Margin for spacing */
-    white-space: normal; /* Allows wrapping */
+    overflow: hidden;
+    display: inline-block;
+    margin: 10px 0;
+    white-space: normal; /* Wrap text */
     width: 100%; /* Full width for wrapping */
 }
 
-.social-links {
-    margin: 20px 0; /* Margin for social links */
+.project {
+    margin: 20px 0;
+    padding: 10px;
+    background: #222;
+    border-radius: 5px;
+}
+
+.project a {
+    color: #7FFF7F;
+    text-decoration: none;
 }
 
 .social-links a {
-    color: #7FFF7F; /* Softer green color */
+    margin-right: 15px;
     text-decoration: none;
-    font-size: 1.5em; /* Size of social links */
-    margin: 0 15px; /* Space between links */
-    display: inline-block; /* Inline block for spacing */
-}
-
-.social-links span {
-    display: block; /* Block display for the text */
+    color: #7FFF7F;
+    transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-    text-decoration: underline; /* Underline on hover */
+    color: #4CAF50;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px 0;
+    color: #666;
 }
