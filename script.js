@@ -1,32 +1,22 @@
-const texts = [
-    "Hello, I'm [Your Name].",
-    "Welcome to my personal site!",
-    "I'm a web developer passionate about creating engaging digital experiences.",
-    "I specialize in front-end development with expertise in HTML, CSS, and JavaScript.",
-    "Feel free to explore my projects and get in touch!"
-];
-
-let textIndex = 0;
+let elements = document.querySelectorAll('.typing');
+let currentElementIndex = 0;
 let charIndex = 0;
-let typingElement;
 
-function typeText() {
-    typingElement = document.querySelectorAll('.typing')[textIndex];
-    if (!typingElement) return;
+function typeEffect() {
+    if (currentElementIndex < elements.length) {
+        let element = elements[currentElementIndex];
+        let text = element.getAttribute('data-text');
 
-    const text = typingElement.getAttribute('data-text');
-
-    if (charIndex < text.length) {
-        typingElement.textContent += text.charAt(charIndex);
-        charIndex++;
-        setTimeout(typeText, 100); // Speed of typing
-    } else {
-        charIndex = 0;
-        textIndex++;
-        if (textIndex < texts.length) {
-            setTimeout(typeText, 500); // Buffer time before next section
+        if (charIndex < text.length) {
+            element.textContent += text.charAt(charIndex);
+            charIndex++;
+            setTimeout(typeEffect, 100); // Speed of typing
+        } else {
+            charIndex = 0;
+            currentElementIndex++;
+            setTimeout(typeEffect, 500); // Buffer before next element
         }
     }
 }
 
-window.onload = typeText;
+window.onload = typeEffect;
