@@ -3,58 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retro Personal Site</title>
+    <title>Home - Retro Personal Site</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.png" type="image/png">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="terminal">
         <div class="output">
-            <div id="home" class="page active">
-                <p class="typing" data-text="Welcome to My Personal Website!"></p>
-                <p class="typing" data-text="Type a command or click a button to navigate."></p>
-                <div class="commands">
-                    <button data-target="about">about</button>
-                    <button data-target="projects">projects</button>
-                    <button data-target="contact">contact</button>
-                </div>
-            </div>
-
-            <div id="about" class="page">
-                <p class="typing" data-text="> about"></p>
-                <p class="typing" data-text="Hi, I'm [Your Name], a passionate web developer."></p>
-                <p class="typing" data-text="I love creating web applications and solving problems."></p>
-                <button data-target="home">back</button>
-            </div>
-
-            <div id="projects" class="page">
-                <p class="typing" data-text="> projects"></p>
-                <p class="typing" data-text="Here are some of my projects:"></p>
-                <ul>
-                    <li class="typing" data-text="Responsive Portfolio - Built with HTML, CSS, and JS.">
-                        <a href="https://github.com/yourprofile/project1" target="_blank">GitHub</a>
-                    </li>
-                    <li class="typing" data-text="JavaScript Game - A fun reflex-testing game.">
-                        <a href="https://github.com/yourprofile/project2" target="_blank">GitHub</a>
-                    </li>
-                </ul>
-                <button data-target="home">back</button>
-            </div>
-
-            <div id="contact" class="page">
-                <p class="typing" data-text="> contact"></p>
-                <p class="typing" data-text="Reach out to me at:"></p>
-                <p class="typing" data-text="Email: yourname@example.com"></p>
-                <p class="typing" data-text="Social Links:"></p>
-                <div class="social-links">
-                    <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
-                    <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
-                    <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-                </div>
-                <button data-target="home">back</button>
+            <p class="typing" data-text="Welcome to My Personal Website!"></p>
+            <p class="typing" data-text="Navigate using the commands below:"></p>
+            <div class="commands">
+                <a href="about.html">about</a>
+                <a href="projects.html">projects</a>
+                <a href="contact.html">contact</a>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
