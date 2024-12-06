@@ -10,11 +10,11 @@ function typeEffect() {
         if (charIndex < text.length) {
             element.textContent += text.charAt(charIndex);
             charIndex++;
-            setTimeout(typeEffect, 50);
+            setTimeout(typeEffect, 50); // Typing speed
         } else {
             charIndex = 0;
             currentElementIndex++;
-            setTimeout(typeEffect, 500);
+            setTimeout(typeEffect, 500); // Pause before next element
         }
     }
 }
