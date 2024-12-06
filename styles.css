@@ -1,0 +1,52 @@
+body {
+    background-color: #000; /* Black background */
+    color: #7FFF7F; /* Softer green color */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligns text to the top */
+    height: auto; /* Auto height for content */
+    margin: 0;
+    text-align: center;
+    padding: 20px; /* Added padding */
+    overflow: auto; /* Allows for scrolling */
+    max-height: 100vh; /* Restrict the height to the viewport */
+}
+
+.container {
+    max-width: 800px; /* Increased width */
+    padding: 40px; /* Padding for spacing */
+    overflow-y: auto; /* Allows vertical scrolling */
+    max-height: 80vh; /* Limit the height to leave space for scrolling */
+}
+
+
+.typing {
+    font-size: 2em;
+    font-weight: bold;
+    overflow: hidden; /* Prevent overflow */
+    display: inline-block; /* Inline display for text wrapping */
+    margin: 10px 0; /* Margin for spacing */
+    white-space: normal; /* Allows wrapping */
+    width: 100%; /* Full width for wrapping */
+}
+
+.social-links {
+    margin: 20px 0; /* Margin for social links */
+}
+
+.social-links a {
+    color: #7FFF7F; /* Softer green color */
+    text-decoration: none;
+    font-size: 1.5em; /* Size of social links */
+    margin: 0 15px; /* Space between links */
+    display: inline-block; /* Inline block for spacing */
+}
+
+.social-links span {
+    display: block; /* Block display for the text */
+}
+
+.social-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
