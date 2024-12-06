@@ -4,19 +4,21 @@ let charIndex = 0;
 
 function typeEffect() {
     if (currentElementIndex < elements.length) {
-        let element = elements[currentElementIndex];
-        let text = element.getAttribute('data-text');
+        const element = elements[currentElementIndex];
+        const text = element.getAttribute('data-text');
 
         if (charIndex < text.length) {
             element.textContent += text.charAt(charIndex);
             charIndex++;
-            setTimeout(typeEffect, 100); // Speed of typing
+            setTimeout(typeEffect, 50);
         } else {
             charIndex = 0;
             currentElementIndex++;
-            setTimeout(typeEffect, 500); // Buffer before next element
+            setTimeout(typeEffect, 500);
         }
     }
 }
 
-window.onload = typeEffect;
+window.onload = () => {
+    typeEffect();
+};
